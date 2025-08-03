@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chữ Chạy</title>
+  <style>
+    .marquee-container {
+      width: 100%;
+      overflow: hidden; 
+      white-space: nowrap;
+      box-sizing: border-box;
+      background: #f2f2f2;
+      padding: 10px 0;
+    }
+
+    .marquee-content {
+      display: inline-block;
+      padding-left: 100%;
+      animation: marquee 10s linear infinite;
+    }
+
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="marquee-container">
+    <div class="marquee-content">
+      🌟 Đây là dòng chữ chạy liên tục từ trái sang phải không bị ngắt 🌟 Đây là dòng chữ chạy liên tục từ trái sang phải không bị ngắt 🌟
+    </div>
+  </div>
+
+</body>
+</html>
